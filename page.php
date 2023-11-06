@@ -24,7 +24,7 @@
       </div>
       <?php }?>
       <div class="page-links">
-        <h2 class="page-links__title"><a href="<?php echo site_url("/about-us") ?>">About Us</a></h2>
+        <h2 class="page-links__title"><a href="<?php echo get_permalink($parent); ?>"><?php echo get_the_title($parent);?></a></h2>
         <ul class="min-list">
           <?php wp_list_pages(array(
             'title_li'=> NULL,
